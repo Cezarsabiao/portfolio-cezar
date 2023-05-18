@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Cezar Sabião</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="main-container">
+        <div id="about" class="content-container">
+            <h1>Sobre</h1>
+            <div class="about-container">
+                <div>Olá, meu nome é <span>Cezar</span>, moro em São Paulo, SP. Sou formado em Gestão de T.I e por muitos anos trabalhei no setor financeiro. Atualmente estou estudando 
+                    para migrar minha carreira para o desenvolvimento. Estou focando em estudar HTML, CSS e Javascript. Recentemente me interessei pela computação em nuvem,
+                    e conquistei a certificação Cloud Practitioner da AWS. Abaixo você vai encontrar minhas <span><a href="#certificates">certificações</a></span> e meus 
+                    <span><a href="#projects">projetos</a></span> pessoais e de estudo.</div>
+                <div class="social-media-buttons">
+                    <div class="button">
+                        <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                        <a href="https://www.linkedin.com/in/cezar-sabiao" target="_blank">Linkedin</a>
+                    </div>
+
+                    <div class="button">
+                        <i class="fa fa-github" style="font-size:30px"></i>
+                        <a href="https://github.com/Cezarsabiao" target="_blank">Github</a>
+                    </div>
+
+                    <div class="button" id="email">
+                        <i class="fa fa-envelope" style="font-size:26px"></i>
+                        <p >Email</p>
+                    </div>
+                </div>
+                
+                 
+            </div>
+            
+ 
+        </div>
+        <div id="experience" class="content-container">
+            
+            <h1>Experiência</h1>
+            
+            <div class="experience-container">
+                <div id="bradesco">
+                    <h2>Banco Bradesco</h2>
+                    <p>Trabalhei no setor de pessoa jurídica, prestando suporte telefonico e presencial para as empresas no cadastro e utilização dos sistemas digitais do banco. </p>
+                </div> 
+
+                <div id="rsi">
+                    <h2>RSI</h2>
+                    <p>Trabalhei em um projeto efetuando testes de usuario no sistema Bloomberg para o Banco Santander.</p>
+                </div>
+
+                <div id="ml">
+                    <h2>ML Gomes</h2>
+                    <p>Como Analista de Contas a Receber, era responsável por organizar os valores pagos pelos prestadores de serviço, 
+                        referentes aos processos de recuperação de bens e solicitar o reembolso junto ao Banco Bradesco, bem como,
+                        criar e manter planilhas para controle e prestação de contas.</p>
+                </div>
+
+                <div id="rennert">
+                    <h2>Rennert</h2>
+                    <p>Intercambio nos Estados Unidos para estudo de Idioma na escola Rennert Miami.
+                        Diploma nivel Upper Intermidiate</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="certificates" class="content-container">
+
+            <h1 >Certificados</h1>
+
+            <div class="certificates-main-container">
+                <div class="certificates-container">
+                    <div>
+                        <h3> AWS Cloud Quest</h3>
+                        <div data-iframe-width="220" data-iframe-height="270" data-share-badge-id="aa340a19-3342-401e-800b-bd7507e937fe" data-share-badge-host="https://www.credly.com"></div>
+                    </div>
+
+                    <div>
+                        <h3>AWS Cloud Practitioner</h3>
+                        <div data-iframe-width="220" data-iframe-height="270" data-share-badge-id="bf3f18f4-384a-493f-9fcf-e332e89d9f97" data-share-badge-host="https://www.credly.com"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="content-container">
+            <div>
+                <h1 >Projetos</h1>
+            </div>
+            <div class="projects-main-container">
+                <div class="projects-container">
+                    <h2>Projeto 1</h2>
+                    <div class="project-imagem"></div>
+                    <p class="project-text">Texto sobre o projeto.</p>
+                </div>
+                <div class="projects-container">
+                    <h2>Projeto 2</h2>
+                    <div class="project-imagem"></div>
+                    <p class="project-text">Texto sobre o projeto.</p>
+                </div>
+                <div class="projects-container">
+                    <h2>Projeto 3</h2>
+                    <div class="project-imagem"></div>
+                    <p class="project-text">Texto sobre o projeto.</p>
+                    
+                </div>
+                <div class="projects-container">
+                    <h2>Projeto 4</h2>
+                    <div class="project-imagem"></div>
+                    <p class="project-text">Texto sobre o projeto.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const email = "cezar_sabiao@hotmail.com"
+        const emailButton = document.getElementById("email");
+        emailButton.addEventListener('click',() => {
+            navigator.clipboard.writeText(email);
+
+            alert("Email copiado!! " + email);
+        })
+    </script>
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</body>
+</html>
